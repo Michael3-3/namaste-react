@@ -1,0 +1,19 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "packages needed to learn react",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michael3-3/namaste-react.git"
+  },
+  "author": "akshai saini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michael3-3/namaste-react/issues"
+  },
+  "homepage": "https://github.com/Michael3-3/namaste-react#readme"
+}
