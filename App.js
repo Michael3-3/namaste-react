@@ -689,8 +689,8 @@ const $da11a1101b2a894a$var$AppRoute = (0, $9WItx$reactrouterdom.createBrowserRo
 ]);
 // Assuming you are using React 18
 const $da11a1101b2a894a$var$root = (0, ($parcel$interopDefault($9WItx$reactdomclient))).createRoot(document.getElementById("root"));
-$da11a1101b2a894a$var$root.render(/*#__PURE__*/ (0, $9WItx$reactjsxruntime.jsx)((0, $6db8248359279a6a$export$2e2bcd8739ae039), {
-    name: "michael"
+$da11a1101b2a894a$var$root.render(/*#__PURE__*/ (0, $9WItx$reactjsxruntime.jsx)((0, $9WItx$reactrouterdom.RouterProvider), {
+    router: $da11a1101b2a894a$var$AppRoute
 })); // For React 17 and earlier versions, use the following:
  // ReactDOM.render(<Welcome />, document.getElementById('root'));
 
