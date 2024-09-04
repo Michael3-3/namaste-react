@@ -9,7 +9,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Build directories
-dist/
+
 build/
 
 # Dependency directories
