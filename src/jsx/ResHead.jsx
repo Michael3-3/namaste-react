@@ -1,7 +1,6 @@
 import React from "react";
 
 const ResHead = ({ info }) => {
-  console.log(info);
   return (
     <div className="w-full  mt-6 p-3 border-[.5px]  border-slate-600  shadow-xl shadow-zinc-500 rounded-3xl">
       <div id="rating" className="tracking-tight font-bold text-lg">
