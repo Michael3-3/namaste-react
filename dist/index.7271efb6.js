@@ -34713,7 +34713,7 @@ const rawdata = {
         "Puducherry"
     ]
 };
-const SWIGGY_URL = "./SwiggyData fecthv5.json";
+const SWIGGY_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=15.5057232&lng=80.049922&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 exports.default = rawdata;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4mpeG":[function(require,module,exports) {
@@ -35286,13 +35286,25 @@ const SingleMenuItem = ({ card })=>{
                         lineNumber: 9,
                         columnNumber: 13
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        id: "menuPrice",
+                    card.description && card.description.length > 100 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        id: "menuDesc",
+                        className: "text-sm text-gray-600",
+                        children: [
+                            card.description.slice(0, 100),
+                            "..."
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/jsx/SingleMenuItem.jsx",
+                        lineNumber: 12,
+                        columnNumber: 15
+                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        id: "menuDesc",
+                        className: "text-sm text-gray-600",
                         children: card.description
                     }, void 0, false, {
                         fileName: "src/jsx/SingleMenuItem.jsx",
-                        lineNumber: 10,
-                        columnNumber: 13
+                        lineNumber: 14,
+                        columnNumber: 15
                     }, undefined)
                 ]
             }, void 0, true, {
@@ -35307,12 +35319,12 @@ const SingleMenuItem = ({ card })=>{
                     children: "Add"
                 }, void 0, false, {
                     fileName: "src/jsx/SingleMenuItem.jsx",
-                    lineNumber: 14,
+                    lineNumber: 22,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/jsx/SingleMenuItem.jsx",
-                lineNumber: 13,
+                lineNumber: 21,
                 columnNumber: 9
             }, undefined)
         ]

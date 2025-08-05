@@ -7,7 +7,15 @@ console.log(card)
         <div id="dataPart" className="">
             <div id="menuTitle" className="text-xl font-bold">{card.name}</div>
             <div id="menuDesc" className="text-xl font-bold">₹{card.price/100}</div>
-            <div id="menuPrice">{card.description}</div>
+            {/* // is the card.description available? and if it is length more then 100char  */}
+            {card.description && card.description.length > 100 ? (
+              <div id="menuDesc" className="text-sm text-gray-600">{card.description.slice(0, 100)}...</div>
+            ) : (
+              <div id="menuDesc" className="text-sm text-gray-600">{card.description}</div>
+              // add more button at the end of discription to see all the text
+
+            )}
+
             
         </div>
         <div id="add">
