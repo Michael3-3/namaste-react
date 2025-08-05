@@ -34713,7 +34713,7 @@ const rawdata = {
         "Puducherry"
     ]
 };
-const SWIGGY_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=15.5057232&lng=80.049922&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+const SWIGGY_URL = "./SwiggyData fecthv5.json";
 exports.default = rawdata;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4mpeG":[function(require,module,exports) {
@@ -35033,7 +35033,7 @@ $RefreshReg$(_c, "Restaurant");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ResHead":"aIOFg","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./restaurantMenu":"2SUWO"}],"aIOFg":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ResHead":"aIOFg","react-router-dom":"9xmpe","./restaurantMenu":"2SUWO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aIOFg":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a8e4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35244,7 +35244,7 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./SingleMenuItem":"6YT5e"}],"6YT5e":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./SingleMenuItem":"6YT5e","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6YT5e":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d202 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
