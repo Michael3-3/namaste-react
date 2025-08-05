@@ -21,3 +21,4 @@ const RestaurantMenu = ({ menuCard }) => {
 };
 
 export default RestaurantMenu;
+
