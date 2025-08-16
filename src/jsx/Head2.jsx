@@ -1,19 +1,18 @@
 import { useState, useEffect } from "react";
-import { SWIGGY_URL } from "../utils/data";
 import Head2Cards from "./Head2Cards";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 const Head2 = () => {
+  const data = useSelector((state) => state.data);
   const [swiggyData, setSwiggyData] = useState(null);
-  useEffect(() => {
+  useEffect(() => { 
     fetchData();
   }, []);
 
-  const fetchData = async () => {
+  const fetchData = () => {
     // Use fetch API to fetch data from SWIGFGY_URL
     // Set the fetched data to swiggyData state
-    const data = await fetch(SWIGGY_URL);
-    const jsonData = await data.json();
-    setSwiggyData(jsonData?.data?.cards[1]?.card?.card);
+    setSwiggyData(data?.data?.cards[1]?.card?.card);
   };
   if (swiggyData === null) {
     return <h1>loading...</h1>;

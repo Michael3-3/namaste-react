@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
-import { SWIGGY_URL } from '../utils/data';
+// import { SWIGGY_URL } from '../utils/data';
 import Head3items from './Head3items';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import { useSelector } from 'react-redux';
 const Head3 = () => {
+    const data  = useSelector((state)=>state.data)
     const [swiggyData, setSwiggyData] = useState(null);
 
     useEffect(() => {
@@ -11,10 +13,10 @@ const Head3 = () => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch(SWIGGY_URL);
-            const jsonData = await response.json();
+            // const response = await fetch(SWIGGY_URL);
+            // const jsonData = await response.json();
             // Log the fetched data
-            setSwiggyData(jsonData?.data?.cards);
+            setSwiggyData(data?.data?.cards);
         } catch (error) {
             console.error("Error fetching data:", error);
         }
